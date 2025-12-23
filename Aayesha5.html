@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bestie Birthday – Part 5</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, #ffd6e8, #ffeef6);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  width:90%;
+  max-width:420px;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  border-radius:20px;
+  padding:25px;
+  text-align:center;
+  animation: fadeUp 1.4s ease;
+}
+
+.container img{
+  width:140px;
+  margin-bottom:18px;
+  animation: float 3s ease-in-out infinite;
+}
+
+h2{
+  font-size:22px;
+  color:#ff4f8b;
+  margin-bottom:12px;
+  animation: fadeIn 1.5s ease;
+}
+
+p{
+  font-size:15px;
+  color:#333;
+  line-height:1.6;
+  animation: fadeIn 2s ease;
+}
+
+.brand{
+  margin-top:22px;
+  font-size:13px;
+  color:#555;
+  opacity:0.75;
+  animation: fadeIn 2.5s ease;
+}
+
+.next-btn{
+  margin-top:25px;
+  padding:12px 26px;
+  border:none;
+  border-radius:30px;
+  background:#ff4f8b;
+  color:#fff;
+  font-size:15px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(255,79,139,0.4);
+  transition:0.3s;
+}
+
+.next-btn:hover{
+  transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <img src="cute4.gif" alt="cute gif">
+
+  <h2>Forever & Always 🫶✨</h2>
+
+  <p>
+    Happy Birthday To You Aittu 🎀 You're such a special 🤩
+    Friend Who Deserves a special Day For being who you are and Bringing joy in every way.
+    You make us Smile and Laugh With everything you do 
+    So today we get to send a Special Birthday Wish To You aaysha 🎉💫🥳
+  </p>
+
+  <div class="brand">
+    template by @arya ✨
+  </div>
+
+  <button class="next-btn" onclick="finish()">
+    End 💖
+  </button>
+</div>
+
+<script>
+function finish(){
+  alert("Bestie Birthday Template Completed 💖");
+}
+</script>
+
+</body>
+</html>

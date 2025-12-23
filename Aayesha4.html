@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bestie Birthday – Part 4</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  background:linear-gradient(135deg,#ffd6e8,#fff1f7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.container{
+  text-align:center;
+  animation:fadeIn 1.5s ease;
+}
+
+.gif{
+  width:200px;
+  margin-bottom:20px;
+  animation:float 4s ease-in-out infinite;
+}
+
+h1{
+  font-size:26px;
+  color:#ff4d88;
+  margin-bottom:10px;
+  animation:slideUp 1.6s ease;
+}
+
+p{
+  font-size:17px;
+  color:#444;
+  line-height:1.6;
+  animation:slideUp 2s ease;
+}
+
+.sticker{
+  position:absolute;
+  font-size:22px;
+  animation:pop 2s infinite;
+}
+
+.s1{top:12%;left:15%;}
+.s2{top:20%;right:18%;}
+.s3{bottom:18%;left:20%;}
+.s4{bottom:22%;right:22%;}
+
+button{
+  margin-top:30px;
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d88;
+  color:#fff;
+  font-size:15px;
+  cursor:pointer;
+  animation:fadeIn 3s ease;
+}
+
+button:hover{
+  background:#ff2f76;
+}
+
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+@keyframes slideUp{
+  from{transform:translateY(30px);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-15px)}
+}
+
+@keyframes pop{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.2)}
+  100%{transform:scale(1)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="cute3.gif" class="gif" alt="cute gif">
+
+  <h1>Forever Grateful for You 🫶✨</h1>
+
+  <p>
+    Thank you for being my safe place 💖<br>
+    My laughter partner 😂<br>
+    And my forever bestie 🥺💫
+  </p>
+
+  <button onclick="nextPart()">Next 💌</button>
+
+</div>
+
+<!-- Stickers -->
+<div class="sticker s1">💖</div>
+<div class="sticker s2">✨</div>
+<div class="sticker s3">🫶</div>
+<div class="sticker s4">💫</div>
+
+<script>
+function nextPart(){
+  window.location.href = "Aayesha5.html";
+}
+</script>
+
+</body>
+</html>

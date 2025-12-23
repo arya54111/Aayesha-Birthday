@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bestie Birthday - Part 1</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #fff1f6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h1, p {
+  opacity: 0;
+  animation: slideUp 1.5s forwards;
+}
+
+h1 {
+  font-size: 28px;
+  color: #ff4d88;
+  animation-delay: 0.3s;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  margin-top: 10px;
+  animation-delay: 0.8s;
+}
+
+.gif {
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.3s;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #ff4d88;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Happy Birthday Aaysha (Aittu)🫶💫</h1>
+  <p>
+    You’re not just my bestie…<br>
+    You’re my safe place, my smile, my everything 💖<br>
+    Today is all about YOU 🎂✨
+  </p>
+
+  <div class="gif">
+    <img src="cute.gif" width="200">
+  </div>
+
+  <button onclick="location.href='Aayesha2.html'">Next 💖</button>
+</div>
+
+</body>
+</html>
